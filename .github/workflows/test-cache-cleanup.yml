@@ -1,0 +1,12 @@
+name: test-cache-cleanup
+
+on:
+  workflow_dispatch:
+
+jobs:
+  gradle-version:
+    runs-on: ubuntu-latest
+    steps:
+    - name: run gradle --version
+      shell: bash
+      run: gradle --version
