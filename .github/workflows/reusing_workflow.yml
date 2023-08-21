@@ -8,3 +8,4 @@ jobs:
     uses: bigdaz/test-gradle-build-action/.github/workflows/reusable-workflow.yml@main
     with:
       gradle-arguments: help
+    secrets: inherit
