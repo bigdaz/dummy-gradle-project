@@ -1,0 +1,14 @@
+name: reusing_workflow
+
+on:
+  workflow_dispatch:
+
+env:
+  ENV_VAR: This is the env var
+
+jobs:
+  reusing_workflow_job:
+    uses: bigdaz/test-gradle-build-action/.github/workflows/reusable-workflow.yml@main
+    secrets:
+      SECRET_VAR: ${{ secrets.SECRET_VAR }}
+      
